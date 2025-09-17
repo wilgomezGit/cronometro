@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #ececec;
+    text-align: center;
+}
+
+.container {
+    margin: 5vh auto;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    display: inline-block;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #444;
+}
+
+.timer {
+    font-size: 120px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #222;
+    text-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.status {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.total-time {
+    font-size: 30px;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input[type="number"] {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    font-size: 20px;
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#startButton { background: #28a745; color: white; }
+#startButton:hover { background: #218838; }
+
+#pauseButton { background: #ffc107; color: black; }
+#pauseButton:hover { background: #e0a800; }
+
+#resetButton { background: #dc3545; color: white; }
+#resetButton:hover { background: #c82333; }
+
+/* Colores dinámicos */
+.container.preparacion { background: #fff3cd; }
+.container.ejercicio { background: #f8d7da; }
+.container.descanso { background: #d1ecf1; }
